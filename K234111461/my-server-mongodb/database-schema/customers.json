@@ -1,0 +1,12 @@
+[
+  { "name": "Customer A", "email": "cus1@gmail.com", "password": "123", "phone": "0911111111", "address": "HCM" },
+  { "name": "Customer B", "email": "cus2@gmail.com", "password": "123", "phone": "0912222222", "address": "HN" },
+  { "name": "Customer C", "email": "cus3@gmail.com", "password": "123", "phone": "0913333333", "address": "DN" },
+  { "name": "Customer D", "email": "cus4@gmail.com", "password": "123", "phone": "0914444444", "address": "CT" },
+  { "name": "Customer E", "email": "cus5@gmail.com", "password": "123", "phone": "0915555555", "address": "HP" },
+  { "name": "Customer F", "email": "cus6@gmail.com", "password": "123", "phone": "0916666666", "address": "Can Tho" },
+  { "name": "Customer G", "email": "cus7@gmail.com", "password": "123", "phone": "0917777777", "address": "Vung Tau" },
+  { "name": "Customer H", "email": "cus8@gmail.com", "password": "123", "phone": "0918888888", "address": "Nha Trang" },
+  { "name": "Customer I", "email": "cus9@gmail.com", "password": "123", "phone": "0919999999", "address": "Hue" },
+  { "name": "Customer J", "email": "cus10@gmail.com", "password": "123", "phone": "0910000000", "address": "Da Lat" }
+]

@@ -1,0 +1,12 @@
+[
+  { "customerId": "<ObjectId_Customer_1>", "orderDate": "2025-01-01", "status": "paid", "totalAmount": 199000, "paidDate": "2025-01-02" },
+  { "customerId": "<ObjectId_Customer_2>", "orderDate": "2025-01-05", "status": "paid", "totalAmount": 450000, "paidDate": "2025-01-06" },
+  { "customerId": "<ObjectId_Customer_3>", "orderDate": "2025-01-10", "status": "paid", "totalAmount": 120000, "paidDate": "2025-01-11" },
+  { "customerId": "<ObjectId_Customer_4>", "orderDate": "2025-02-01", "status": "pending", "totalAmount": 0 },
+  { "customerId": "<ObjectId_Customer_5>", "orderDate": "2025-02-15", "status": "paid", "totalAmount": 89000, "paidDate": "2025-02-16" },
+  { "customerId": "<ObjectId_Customer_6>", "orderDate": "2025-03-01", "status": "pending", "totalAmount": 0 },
+  { "customerId": "<ObjectId_Customer_7>", "orderDate": "2025-03-10", "status": "paid", "totalAmount": 350000, "paidDate": "2025-03-11" },
+  { "customerId": "<ObjectId_Customer_8>", "orderDate": "2025-03-20", "status": "paid", "totalAmount": 49000, "paidDate": "2025-03-21" },
+  { "customerId": "<ObjectId_Customer_9>", "orderDate": "2025-04-01", "status": "pending", "totalAmount": 0 },
+  { "customerId": "<ObjectId_Customer_10>", "orderDate": "2025-04-15", "status": "paid", "totalAmount": 180000, "paidDate": "2025-04-16" }
+]

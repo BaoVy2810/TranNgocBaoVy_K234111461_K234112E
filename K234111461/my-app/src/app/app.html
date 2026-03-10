@@ -1,1 +1,31 @@
-<router-outlet></router-outlet>
+@if (!auth.user()) {
+  <router-outlet></router-outlet>
+} @else {
+  <h1>Midterm Exam - The Panda Store</h1>
+  <nav id="container" class="part-b">
+    <ul>
+      <li><a routerLink="/shop" routerLinkActive="active">Shopping</a></li>
+      <li>
+        <a href="javascript:void(0)">Cart</a>
+        <ul>
+          <li><a routerLink="/current-cart" routerLinkActive="active">Current Cart</a></li>
+          <li><a routerLink="/revenue" routerLinkActive="active">Revenue Statistics</a></li>
+          <li><a routerLink="/vip-customers" routerLinkActive="active">VIP Customers</a></li>
+        </ul>
+      </li>
+      <li><a href="javascript:void(0)" (click)="logout()" class="welcome">Welcome {{ auth.user()!.name }}</a></li>
+    </ul>
+  </nav>
+
+  <div class="layout-ac">
+    <aside class="part-a">
+      <div class="avatar-slot">
+        <img src="assets/avatar.png" alt="Avatar" class="avatar-img" onerror="this.src='https://api.dicebear.com/9.x/bottts/svg?seed=K234111461'" />
+      </div>
+      <app-student-info></app-student-info>
+    </aside>
+    <main class="part-c">
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+}

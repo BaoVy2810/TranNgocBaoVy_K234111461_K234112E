@@ -1,0 +1,26 @@
+<section class="vip">
+  <h2>VIP Customers</h2>
+  <div *ngIf="!isEmployee" class="forbidden">Only employees can access this page.</div>
+  <div *ngIf="isEmployee">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Total Spent</th>
+          <th>Orders</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let c of customers; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ c.name }}</td>
+          <td>{{ c.email }}</td>
+          <td>{{ c.totalSpent | number }} VNĐ</td>
+          <td>{{ c.orderCount }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>

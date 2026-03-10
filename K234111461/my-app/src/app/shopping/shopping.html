@@ -1,0 +1,25 @@
+<app-alert-modal [message]="modalMessage" [visible]="showModal" (closed)="onModalClose()"></app-alert-modal>
+<section class="shopping">
+  <h2>Shopping</h2>
+  <div class="filters">
+    <input type="number" [(ngModel)]="minPrice" placeholder="Min price" />
+    <input type="number" [(ngModel)]="maxPrice" placeholder="Max price" />
+    <button (click)="search()">Search</button>
+  </div>
+  <div class="product-grid">
+    <div *ngFor="let p of products" class="product-card">
+      <div class="img-wrap">
+        <img src="https://api.dicebear.com/9.x/shapes/svg?seed={{p._id}}" alt="{{p.name}}" />
+      </div>
+      <h3>{{ p.name }}</h3>
+      <p class="price">{{ p.price | number }} VNĐ</p>
+      <p class="meta" *ngIf="p.model">Model: {{ p.model }}</p>
+      <p class="meta" *ngIf="p.madeBy">Made by: {{ p.madeBy }}</p>
+      <div class="actions">
+        <input type="number" [(ngModel)]="qtyMap[p._id]" min="1" class="qty" placeholder="1" />
+        <button class="buy" (click)="buy(p)" [disabled]="!isLoggedIn">Add to cart</button>
+      </div>
+      <p *ngIf="!isLoggedIn" class="hint">Login to add to cart</p>
+    </div>
+  </div>
+</section>

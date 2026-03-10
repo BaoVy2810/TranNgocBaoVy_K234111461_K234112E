@@ -1,0 +1,38 @@
+<div
+  [class.login-overlay]="isModal"
+  [class.login-page-wrapper]="!isModal"
+  (click)="isModal && close()"
+>
+  <div class="login-container" (click)="$event.stopPropagation()">
+    <h2>Login</h2>
+    <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
+      <div>
+        <label>Role:</label>
+        <select [(ngModel)]="role" name="role" required>
+          <option value="customer">Customer</option>
+          <option value="employee">Employee</option>
+        </select>
+      </div>
+      <div>
+        <label>Email:</label>
+        <input type="email" [(ngModel)]="email" name="email" required />
+      </div>
+      <div>
+        <label>Password:</label>
+        <input type="password" [(ngModel)]="password" name="password" required />
+      </div>
+      <div *ngIf="error" class="error" role="alert">{{ error }}</div>
+      <button type="submit" [disabled]="loginForm.invalid || loading">
+        {{ loading ? 'Logging in...' : 'Login' }}
+      </button>
+    </form>
+    <p>
+      Don't have an account?
+      @if (isModal) {
+        <a href="javascript:void(0)" (click)="goRegister()">Register here</a>
+      } @else {
+        <a routerLink="/register">Register here</a>
+      }
+    </p>
+  </div>
+</div>

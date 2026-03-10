@@ -1,0 +1,39 @@
+.student-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  background: rgba(244, 241, 234, 0.12);
+  border-radius: 8px;
+  border: 1px solid rgba(244, 241, 234, 0.25);
+  animation: moveUpDown 4s ease-in-out infinite;
+}
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.id {
+  font-size: 11px;
+  letter-spacing: 2px;
+  opacity: 0.85;
+}
+.name {
+  font-weight: 600;
+  font-size: 14px;
+}
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}

@@ -1,0 +1,36 @@
+<app-alert-modal [message]="modalMessage" [visible]="showModal" (closed)="onModalClose()"></app-alert-modal>
+<section class="cart">
+  <h2>Current Cart</h2>
+  <div *ngIf="!isCustomer" class="login-prompt">
+    <p>Please login as Customer to view your cart.</p>
+  </div>
+  <div *ngIf="isCustomer && !order" class="empty">Your cart is empty.</div>
+  <div *ngIf="isCustomer && order" class="cart-content">
+    <table>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Qty</th>
+          <th>Subtotal</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let d of details">
+          <td>{{ d.product && d.product.name }}</td>
+          <td>{{ d.price | number }} VNĐ</td>
+          <td>
+            <input type="number" [(ngModel)]="d.quantity" min="1" (change)="updateQty(d)" />
+          </td>
+          <td>{{ d.price * d.quantity | number }} VNĐ</td>
+          <td><button (click)="remove(d)">Remove</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="actions">
+      <a routerLink="/shop">Buy more</a>
+      <button (click)="pay()">Payment</button>
+    </div>
+  </div>
+</section>

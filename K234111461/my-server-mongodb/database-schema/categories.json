@@ -1,0 +1,12 @@
+[
+  { "name": "Fashion", "description": "Clothing and accessories" },
+  { "name": "Electronics", "description": "Electronic devices" },
+  { "name": "Home", "description": "Home and garden" },
+  { "name": "Sports", "description": "Sports and outdoor" },
+  { "name": "Beauty", "description": "Beauty products" },
+  { "name": "Toys", "description": "Toys and games" },
+  { "name": "Books", "description": "Books and stationery" },
+  { "name": "Food", "description": "Food and beverages" },
+  { "name": "Health", "description": "Health and wellness" },
+  { "name": "Pet", "description": "Pet supplies" }
+]

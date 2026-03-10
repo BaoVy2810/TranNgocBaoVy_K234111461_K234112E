@@ -1,0 +1,12 @@
+[
+  { "orderId": "<ObjectId_Order_1>", "productId": "<ObjectId_Product_1>", "quantity": 1, "price": 199000 },
+  { "orderId": "<ObjectId_Order_2>", "productId": "<ObjectId_Product_2>", "quantity": 1, "price": 450000 },
+  { "orderId": "<ObjectId_Order_3>", "productId": "<ObjectId_Product_3>", "quantity": 1, "price": 120000 },
+  { "orderId": "<ObjectId_Order_4>", "productId": "<ObjectId_Product_4>", "quantity": 2, "price": 89000 },
+  { "orderId": "<ObjectId_Order_5>", "productId": "<ObjectId_Product_5>", "quantity": 1, "price": 89000 },
+  { "orderId": "<ObjectId_Order_6>", "productId": "<ObjectId_Product_6>", "quantity": 1, "price": 350000 },
+  { "orderId": "<ObjectId_Order_7>", "productId": "<ObjectId_Product_7>", "quantity": 3, "price": 29000 },
+  { "orderId": "<ObjectId_Order_8>", "productId": "<ObjectId_Product_8>", "quantity": 1, "price": 49000 },
+  { "orderId": "<ObjectId_Order_9>", "productId": "<ObjectId_Product_9>", "quantity": 2, "price": 59000 },
+  { "orderId": "<ObjectId_Order_10>", "productId": "<ObjectId_Product_10>", "quantity": 1, "price": 180000 }
+]

@@ -1,0 +1,8 @@
+@if (visible) {
+  <div class="alert-overlay" (click)="onBackdropClick($event)">
+    <div class="alert-box">
+      <p class="alert-message">{{ message }}</p>
+      <button type="button" class="alert-ok" (click)="onOk()">OK</button>
+    </div>
+  </div>
+}

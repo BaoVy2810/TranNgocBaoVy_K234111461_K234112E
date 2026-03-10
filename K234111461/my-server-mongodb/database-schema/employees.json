@@ -1,0 +1,12 @@
+[
+  { "name": "Employee A", "email": "emp1@pandastore.com", "password": "123", "phone": "0901111111" },
+  { "name": "Employee B", "email": "emp2@pandastore.com", "password": "123", "phone": "0902222222" },
+  { "name": "Employee C", "email": "emp3@pandastore.com", "password": "123", "phone": "0903333333" },
+  { "name": "Employee D", "email": "emp4@pandastore.com", "password": "123", "phone": "0904444444" },
+  { "name": "Employee E", "email": "emp5@pandastore.com", "password": "123", "phone": "0905555555" },
+  { "name": "Employee F", "email": "emp6@pandastore.com", "password": "123", "phone": "0906666666" },
+  { "name": "Employee G", "email": "emp7@pandastore.com", "password": "123", "phone": "0907777777" },
+  { "name": "Employee H", "email": "emp8@pandastore.com", "password": "123", "phone": "0908888888" },
+  { "name": "Employee I", "email": "emp9@pandastore.com", "password": "123", "phone": "0909999999" },
+  { "name": "Employee J", "email": "emp10@pandastore.com", "password": "123", "phone": "0900000000" }
+]

@@ -1,0 +1,12 @@
+[
+  { "name": "Panda T-Shirt", "price": 199000, "model": "PT-001", "madeBy": "Vietnam" },
+  { "name": "Panda Hoodie", "price": 450000, "model": "PH-001", "madeBy": "Vietnam" },
+  { "name": "Panda Cap", "price": 120000, "model": "PC-001", "madeBy": "China" },
+  { "name": "Panda Mug", "price": 89000, "model": "PM-001", "madeBy": "Vietnam" },
+  { "name": "Panda Keychain", "price": 49000, "model": "PK-001", "madeBy": "Japan" },
+  { "name": "Panda Backpack", "price": 350000, "model": "PB-001", "madeBy": "Vietnam" },
+  { "name": "Panda Sticker Pack", "price": 29000, "model": "PS-001", "madeBy": "Korea" },
+  { "name": "Panda Plush Toy", "price": 180000, "model": "PP-001", "madeBy": "China" },
+  { "name": "Panda Notebook", "price": 59000, "model": "PN-001", "madeBy": "Vietnam" },
+  { "name": "Panda Water Bottle", "price": 99000, "model": "PW-001", "madeBy": "Japan" }
+]

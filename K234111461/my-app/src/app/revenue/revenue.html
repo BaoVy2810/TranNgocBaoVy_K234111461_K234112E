@@ -1,0 +1,28 @@
+<section class="revenue">
+  <h2>Revenue Statistics</h2>
+  <div *ngIf="!isEmployee" class="forbidden">Only employees can access this page.</div>
+  <div *ngIf="isEmployee">
+    <div class="filters">
+      <input type="number" [(ngModel)]="year" placeholder="Year (e.g. 2025)" />
+      <button (click)="load()">Show</button>
+    </div>
+    <div class="stats" *ngIf="data">
+      <p>Total Revenue: <strong>{{ data.revenue | number }} VNĐ</strong></p>
+      <p>Order Count: {{ data.orderCount }}</p>
+      <p>Year: {{ data.year || 'All' }}</p>
+    </div>
+    <div class="by-year" *ngIf="byYear.length">
+      <h3>By Year</h3>
+      <table>
+        <thead><tr><th>Year</th><th>Revenue</th><th>Orders</th></tr></thead>
+        <tbody>
+          <tr *ngFor="let row of byYear">
+            <td>{{ row._id }}</td>
+            <td>{{ row.totalRevenue | number }} VNĐ</td>
+            <td>{{ row.count }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>

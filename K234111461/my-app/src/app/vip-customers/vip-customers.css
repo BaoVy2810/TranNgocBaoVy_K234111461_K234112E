@@ -1,0 +1,5 @@
+.vip { padding: 24px; max-width: 800px; margin: 0 auto; }
+.vip h2 { margin-bottom: 16px; }
+.forbidden { color: #ff6b6b; padding: 24px; }
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 10px; text-align: left; border-bottom: 1px solid rgba(244,241,234,0.2); }
